@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CampActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:src="@drawable/logo_slogan" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true" 
+        android:background="@drawable/layout_gradient">
+
+
+		    <Button
+		        android:id="@+id/update1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="45dp"
+		        android:layout_centerHorizontal="true"
+		    	android:layout_alignParentBottom="true"
+		        android:layout_marginBottom="5dp"
+		        android:background="@drawable/btnauth"
+		        android:text="Autorizar"
+		        android:textColor="#ffffff"
+		        android:textSize="12sp"
+		        android:textStyle="bold"
+		        android:typeface="sans" />
+
+		  
+
+				    <ScrollView
+				        android:id="@+id/scrollView1"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_above="@+id/update1"
+				        android:layout_marginBottom="5dp"
+				        android:layout_alignParentTop="true"  >
+
+				        <RelativeLayout
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content">
+				            				            
+		 				  <ImageView
+						        android:id="@+id/ImgCamp"
+						        android:layout_width="fill_parent"
+						        android:layout_height="wrap_content" 
+						        android:layout_centerHorizontal="true"
+						        android:scaleType="fitCenter"
+				                android:adjustViewBounds="true"
+				                android:background="#ffffff"
+						        android:padding="5dp" 
+						        android:layout_margin="5dp"
+						        android:layout_alignParentTop="true" />
+						            
+						    <TextView
+						        android:id="@+id/Titulo"
+						        android:layout_width="fill_parent"
+						        android:layout_height="wrap_content"
+						        android:layout_centerHorizontal="true"
+						        android:layout_margin="5dp"
+						        android:layout_marginLeft="10dp"
+						        android:layout_marginRight="5dp"
+						        android:layout_below="@+id/ImgCamp"
+						        android:textColor="#ffffff"
+						        android:textSize="18sp" 
+						        android:textStyle="bold"/>
+						      
+						    <TextView
+						        android:id="@+id/Texto"
+						        android:layout_width="fill_parent"
+						        android:layout_height="wrap_content"
+						        android:layout_below="@+id/Date"
+						        android:layout_centerHorizontal="true"
+						        android:layout_marginTop="3dp"
+						        android:layout_marginLeft="10dp"
+						        android:layout_marginRight="10dp"
+						        android:layout_marginBottom="10dp"
+						        android:maxLines="100"
+						        android:minLines="1"
+						        android:textColor="#ffffff"
+						        android:textSize="14sp" />
+						        
+						    <TextView
+						        android:id="@+id/Date"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						     	android:layout_alignParentRight="true"
+						     	android:layout_marginRight="7dp"
+						     	android:layout_below="@+id/Titulo"
+						        android:textColor="#808080"
+						        android:textSize="12sp"
+						        android:textStyle="bold" />
+				            
+				        </RelativeLayout>
+				    </ScrollView>
+		
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"   />
+
+</RelativeLayout>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:src="@drawable/logo_slogan" />
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_gradient">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+   
+				
+				    <RelativeLayout
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:background="@drawable/layout_gradient"
+				        android:layout_alignParentTop="true"
+				        android:padding="10dp"
+				        android:layout_centerHorizontal="true"
+				        android:layout_centerVertical="true" >
+				
+				        <Button
+				            android:id="@+id/VldInv"
+				            android:layout_width="fill_parent"
+				            android:layout_height="40dp"
+				            android:layout_alignParentLeft="true"
+				            android:layout_below="@+id/Invite"
+				            android:layout_marginTop="10dp"
+				            android:background="@drawable/btnselct"
+				            android:shadowColor="#000000"
+				            android:shadowDx="1"
+				            android:shadowDy="1"
+				            android:shadowRadius="1"
+				            android:text="Validar Convite"
+				            android:textColor="#ffffff"
+				            android:typeface="sans"
+				            android:textStyle="bold" />
+				
+				        <TextView
+				            android:id="@+id/textView1"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_alignParentTop="true"
+				            android:layout_centerHorizontal="true"
+				            android:textColor="#ffffff"
+				            android:textSize="14dp"
+				            android:text="@string/txtconvite"
+				            android:textAppearance="?android:attr/textAppearanceMedium" />
+				
+				        <EditText
+				            android:id="@+id/Invite"
+				            android:layout_width="fill_parent"
+				            android:layout_height="45dp"
+				            android:layout_below="@+id/textView1"
+				            android:background="@drawable/oldedt"
+				            android:layout_marginTop="15dp"
+				            android:gravity="center"
+				            android:ems="10"
+				            android:hint="Digite seu Convite"
+				            android:inputType="textNoSuggestions"
+				            android:padding="5dp"
+				            android:selectAllOnFocus="true"
+				            android:textCursorDrawable="@null" />
+				
+				        <ProgressBar
+				            android:id="@+id/progressBar1"
+				            style="?android:attr/progressBarStyleLarge"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:visibility="gone"
+				            android:layout_centerHorizontal="true"
+				            android:layout_centerVertical="true" />
+				
+				    </RelativeLayout>
+                    
+                    
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+				    
+				       <RelativeLayout
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:background="@drawable/layout_gradient"
+				        android:layout_alignParentTop="true"
+				        android:padding="10dp"
+				        android:layout_centerHorizontal="true"
+				        android:layout_centerVertical="true" >
+				
+				        <Button
+				            android:id="@+id/VldEmail"
+				            android:layout_width="fill_parent"
+				            android:layout_height="40dp"
+				            android:layout_alignParentLeft="true"
+				            android:layout_below="@+id/psw"
+				            android:layout_marginTop="10dp"
+				            android:background="@drawable/btnselct"
+				            android:shadowColor="#000000"
+				            android:shadowDx="1"
+				            android:shadowDy="1"
+				            android:shadowRadius="1"
+				            android:text="Validar Email"
+				            android:textColor="#ffffff"
+				            android:typeface="sans"
+				            android:textStyle="bold" />
+				
+				        <TextView
+				            android:id="@+id/textView2"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_alignParentTop="true"
+				            android:layout_centerHorizontal="true"
+				            android:textColor="#ffffff"
+				            android:textSize="14dp"
+				            android:text="@string/txtemail" />
+				
+				        <EditText
+				            android:id="@+id/Email"
+				            android:layout_width="fill_parent"
+				            android:layout_height="45dp"
+				            android:layout_below="@+id/textView2"
+				            android:layout_marginTop="5dp"
+				            android:layout_marginRight="-12dp"
+				            android:layout_toLeftOf="@+id/provider"
+				            android:textAlignment="gravity"
+				            android:gravity="right"
+				            android:ems="10"
+				            android:hint="Digite seu Email"
+				            android:textColor="#ffffff"
+				            android:inputType="textEmailAddress"
+				            android:selectAllOnFocus="true"
+				            android:textCursorDrawable="@null" />
+				        
+				        <EditText
+				            android:id="@+id/psw"
+				            android:layout_width="fill_parent"
+				            android:layout_height="40dp"
+				            android:layout_below="@+id/Email"
+				            android:background="@drawable/oldedt"
+				            android:layout_marginTop="5dp"
+				            android:ems="10"
+				            android:gravity="center"
+				            android:hint="Digite sua Senha"
+				            android:inputType="textPassword"
+				            android:padding="5dp"
+				            android:selectAllOnFocus="true"
+				            android:textCursorDrawable="@null" />
+				         <TextView
+				            android:id="@+id/provider"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_above="@+id/psw"
+				            android:layout_alignParentRight="true"
+				            android:layout_marginRight="10dp"
+				            android:layout_marginBottom="15dp"
+				            android:textSize="18dp"
+				            android:textColor="#888888"
+				            android:text="@string/provider" />
+
+				
+				        <ProgressBar
+				            android:id="@+id/progressBar2"
+				            style="?android:attr/progressBarStyleLarge"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:visibility="gone"
+				            android:layout_centerHorizontal="true"
+				            android:layout_centerVertical="true" />
+
+				        <Button
+				            android:id="@+id/pula1"
+				            android:layout_width="fill_parent"
+				            android:layout_height="35dp"
+				            android:layout_alignParentBottom="true"
+				            android:layout_marginBottom="10dp"
+				            android:background="@drawable/btnselct"
+	                        android:shadowColor="#000000"
+	                        android:shadowDx="1"
+	                        android:shadowDy="1"
+	                        android:shadowRadius="1"
+	                        android:textColor="#ffffff"
+	                        android:textStyle="bold"
+	                        android:typeface="sans"
+				            android:text="Pular" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+				       
+                     <RelativeLayout
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:background="@drawable/layout_gradient"
+				        android:layout_alignParentTop="true"
+				        android:padding="10dp"
+				        android:layout_centerHorizontal="true"
+				        android:layout_centerVertical="true" >
+				       
+                     <Button
+                         android:id="@+id/VldSocial"
+                         android:layout_width="fill_parent"
+                         android:layout_height="40dp"
+                         android:layout_alignParentLeft="true"
+                         android:layout_below="@+id/switch2"
+                         android:layout_marginTop="10dp"
+                         android:background="@drawable/btnselct"
+                         android:shadowColor="#000000"
+                         android:shadowDx="1"
+                         android:shadowDy="1"
+                         android:shadowRadius="1"
+                         android:text="Login"
+                         android:textColor="#ffffff"
+                         android:textStyle="bold"
+                         android:typeface="sans" />
+				
+				        <TextView
+				            android:id="@+id/textView3"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_alignParentTop="true"
+				        	android:layout_alignParentLeft="true"
+				            android:textColor="#ffffff"
+				            android:textSize="24dp"
+				            android:text="@string/txtmedia" />
+				        
+				         <TextView
+				            android:id="@+id/textView4"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_below="@+id/textView3"
+				            android:layout_centerHorizontal="true"
+				            android:textColor="#ffffff"
+				            android:textSize="14dp"
+				            android:layout_marginTop="5dp"
+				            android:text="@string/txtsocial" />
+
+				         <Switch
+				             android:id="@+id/switch1"
+				             android:layout_width="wrap_content"
+				             android:layout_height="35dp"
+				             android:layout_below="@+id/textView4"
+				             android:checked="true"
+				             android:layout_toRightOf="@+id/facelogo"	
+				             android:textColor="#ffffff"
+				             android:textSize="14dp"
+				             android:layout_marginTop="15dp" 
+				             android:text="Compartilhar pelo Facebook" />
+
+				         <ImageView
+				             android:id="@+id/facelogo"
+				             android:layout_width="35dp"
+				             android:layout_height="35dp"
+				             android:layout_alignParentLeft="true"
+				             android:layout_below="@+id/textView4"
+				             android:layout_marginTop="15dp"
+				             android:layout_marginRight="10dp"
+				             android:src="@drawable/facebook" />
+
+
+				         <Switch
+				             android:id="@+id/switch2"
+				             android:layout_width="wrap_content"
+				             android:layout_height="35dp"
+				             android:layout_below="@+id/switch1"
+				             android:layout_toRightOf="@+id/twitterlogo"
+				             android:checked="true"			             
+				             android:textColor="#ffffff"
+				             android:textSize="14dp"
+				             android:layout_marginTop="15dp"
+				             android:text="Compartilhar pelo Twitter" />
+
+				         <ImageView
+				             android:id="@+id/twitterlogo"
+				             android:layout_width="35dp"
+				             android:layout_height="35dp"
+				           	 android:layout_alignParentLeft="true"
+				             android:layout_below="@+id/facelogo"
+				             android:layout_marginTop="15dp"
+				             android:layout_marginRight="10dp"
+				             android:src="@drawable/twitter" />
+
+				         <Button
+				             android:id="@+id/hidenbt"
+				             android:layout_width="wrap_content"
+				             android:layout_height="wrap_content"
+				             android:visibility="invisible"
+				             android:layout_alignParentBottom="true"
+				             android:text="Ninja" />
+
+				         <Button
+				             android:id="@+id/pula2"
+				             android:layout_width="fill_parent"
+				             android:layout_height="35dp"
+				             android:layout_alignParentBottom="true"
+				             android:layout_marginBottom="10dp"				             
+				             android:background="@drawable/btnselct"
+	                         android:shadowColor="#000000"
+	                         android:shadowDx="1"
+	                         android:shadowDy="1"
+	                         android:shadowRadius="1"
+	                         android:textColor="#ffffff"
+	                         android:textStyle="bold"
+	                         android:typeface="sans"
+				             android:text="Pular" />
+
+				         </RelativeLayout>
+
+                </RelativeLayout>
+                
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

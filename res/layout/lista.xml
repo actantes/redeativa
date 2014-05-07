@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/Lista" 
+      android:padding="8dp"
+      style="@drawable/listborder"
+     >
+
+     <LinearLayout
+         android:id="@+id/Text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/socbar2"
+         android:layout_toRightOf="@+id/Data"
+         android:gravity="left|center_vertical"
+         android:layout_centerInParent="true"
+         android:layout_below="@+id/Image"
+         android:orientation="vertical"     
+      	 android:minHeight="100dp" 
+         android:paddingLeft="10dip" >
+
+         <TextView
+             android:id="@+id/Title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:ellipsize="end"
+             android:maxLines="2"
+             android:paddingLeft="10dip"
+             android:textColor="#ffffff"
+             android:textSize="20dip"
+             android:textStyle="italic" />
+
+         <TextView
+             android:id="@+id/Conteudo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:ellipsize="end"
+             android:maxLines="3"
+             android:paddingLeft="10dip"
+             android:textColor="#808080"
+             android:textSize="14dip" />
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/Data"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:layout_below="@+id/Image"
+    	 android:padding="3dip" > >
+
+         <TextView
+             android:id="@+id/Dia"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="18dp"
+             android:gravity="center"
+             android:textColor="#ffffff"
+             android:textSize="30dip"
+             android:textStyle="bold"
+             android:typeface="monospace" />
+         
+                 <TextView
+                     android:id="@+id/Mes"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/Dia"
+                     android:gravity="center"
+                     android:textColor="#ffffff"
+                     android:textSize="20dip"
+                     android:textStyle="bold"
+                     android:typeface="monospace" />
+
+                 <CheckBox
+                     android:id="@+id/checkBox1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/Mes"
+                     android:checked="true"
+                     android:padding="3dp"
+                      android:gravity="center"
+                     android:clickable="false"
+                     android:visibility="gone" />
+                 
+     </LinearLayout>
+     		
+     <RelativeLayout
+            android:id="@+id/socbar2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+    		android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/Image">
+                 
+         
+          <ImageView
+                 android:id="@+id/imgcheck"
+                 android:layout_width="wrap_content"
+                 android:layout_height="100dp"
+                  android:layout_centerHorizontal="true" 
+                   android:layout_centerVertical="true" 
+                  />
+         
+        </RelativeLayout>
+        
+         <LinearLayout
+             android:id="@+id/Image"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="12dp"
+             android:gravity="center"
+             android:orientation="vertical" >
+
+             <ImageView
+                 android:id="@+id/imageView1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                  android:layout_centerVertical="true" 
+                  android:visibility="gone"
+                  android:padding="3dp"
+                  android:background="#ffffff"
+                  android:scaleType="fitCenter"
+                  android:adjustViewBounds="true" />
+ 
+        </LinearLayout>
+        
+</RelativeLayout>

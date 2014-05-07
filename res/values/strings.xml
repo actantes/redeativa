@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RedeAtiva</string>
+    <string name="action_settings">Settings</string>
+    <string name="txtconvite">Digite abaixo o número do convite que você recebeu por e-mail para ter acesso completo ao aplicativo</string>
+    <string name="txtemail">Para não precisarmos ficar pedindo permissão para enviar e-mails, é necessário que confirme seu e-mail e sua senha para enviarmos em background</string>
+    <string name="txtmedia">Login em Redes Sociais</string>
+    <string name="txtsocial">Também precisamos que você faça login nas redes sociais para que possamos postar no Twitter e Facebook em backgroung</string>    
+    <string name="provider">\@gmail.com</string>
+    <string name="title_activity_log">LogActivity</string>
+    <string name="title_activity_camp">CampActivity</string>
+    <string name="myurl">http://actantes.org.br:8080</string>
+   
+
+</resources>
