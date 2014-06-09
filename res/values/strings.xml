@@ -10,7 +10,7 @@
     <string name="provider">\@gmail.com</string>
     <string name="title_activity_log">LogActivity</string>
     <string name="title_activity_camp">CampActivity</string>
-    <string name="myurl">http://actantes.org.br:8080</string>
+    <string name="myurl">http://actantes.org.br</string>
    
 
 </resources>
